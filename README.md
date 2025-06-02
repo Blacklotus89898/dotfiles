@@ -2,7 +2,9 @@
 Repo for configurations
 
 ## TODO:
-- [ ] Installation setup 
+- [x] Profile and config setup in setup.sh
+- [ ] Installation setup in install.sh
+- [ ] 
 
 
 ## Installation setup
