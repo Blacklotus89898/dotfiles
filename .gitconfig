@@ -1,3 +1,7 @@
 [user]
-	email = song.yang.chen89898@gmail.com
-	name = Blacklotus89898
+	email = steve.chen@mail.mcgill.ca
+	name = Steve
+[core]
+	editor = vim
+[credential]
+	helper = store

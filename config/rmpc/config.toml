@@ -1,0 +1,9 @@
+theme = "default"
+
+[connection]
+address = "127.0.0.1:6600"
+
+[album_art]
+# rmpc can display album art in the terminal if it supports it (like Kitty or Alacritty)
+disabled = false
+method = "auto"
