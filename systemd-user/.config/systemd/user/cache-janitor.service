@@ -1,0 +1,6 @@
+[Unit]
+Description=Weekly cache and trash janitor
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/cache-janitor.sh

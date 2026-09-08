@@ -1,0 +1,9 @@
+[Unit]
+Description=Check for updates daily and 30min after login
+
+[Timer]
+OnBootSec=30min
+OnUnitActiveSec=12h
+
+[Install]
+WantedBy=timers.target

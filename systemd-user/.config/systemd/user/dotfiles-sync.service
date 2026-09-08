@@ -1,0 +1,6 @@
+[Unit]
+Description=Auto-commit and push dotfiles
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/dotfiles-sync.sh
