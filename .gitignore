@@ -14,14 +14,14 @@
 .cache/
 
 # Application state / generated files
-mpd/database
-mpd/pid
-mpd/state
-mpd/log
-mpd/sticker.sql
-ncmpcpp/error.log
-ncmpcpp/lyrics/
-gtk-3.0/bookmarks
+**/mpd/database
+**/mpd/pid
+**/mpd/state
+**/mpd/log
+**/mpd/sticker.sql
+**/ncmpcpp/error.log
+**/ncmpcpp/lyrics/
+**/gtk-3.0/bookmarks
 
 # OS cruft
 .DS_Store
