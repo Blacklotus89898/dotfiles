@@ -6,7 +6,8 @@ set -euo pipefail
 freed_before=$(df --output=used -B1G / | tail -1 | tr -dc '0-9')
 
 # AUR build caches (biggest offender: go module caches inside)
-[ -d "$HOME/.cache/yay" ] && rm -rf "$HOME/.cache/yay"/*
+# || true: root-owned build leftovers abort rm; sudo rm -rf fixes permanently
+[ -d "$HOME/.cache/yay" ] && rm -rf "$HOME/.cache/yay"/* 2>/dev/null || true
 
 # language toolchain caches
 command -v pip    &>/dev/null && pip    cache purge  &>/dev/null || true
