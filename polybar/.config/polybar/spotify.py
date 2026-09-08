@@ -56,7 +56,7 @@ def label() -> str:
     if not status:
         return ""
     playing = status == "Playing"
-    toggle_icon = ICONS["play"] if playing else ICONS["pause"]
+    toggle_icon = ICONS["pause"] if playing else ICONS["play"]
     state = "" if playing else f"{DIM}[paused]{RESET} "
     title = track() or "spotify"
 
