@@ -239,9 +239,10 @@ bindsym $mod+r mode "resize"
 default_border pixel 2
 
 #border colors
-client.focused #343746 #343746 #F8F8F2 #343746 #343746
-client.focused_inactive #343746 #343746 #F8F8F2 #21222C #21222C
-client.unfocused #343746 #343746 #F8F8F2 #21222C #21222C
+client.focused          #ebbcba #26233a #e0def4 #c4a7e7 #ebbcba
+client.focused_inactive #524f67 #1f1d2e #e0def4 #2a283e #524f67
+client.unfocused        #26233a #191724 #908caa #2a283e #26233a
+client.urgent           #eb6f92 #eb6f92 #191724 #eb6f92 #eb6f92
 
 ### SETTINGS FOR i3 BAR ###
 
@@ -253,15 +254,15 @@ bar {
 ### SETTINGS FOR i3-gaps ###
 
 # Set inner/outer gaps
-gaps inner 8
+gaps inner 10
 gaps outer 0
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-# smart_gaps on
+smart_gaps off
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-#smart_borders on
+smart_borders on
 
 # Press $mod+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner

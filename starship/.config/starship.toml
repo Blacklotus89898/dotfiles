@@ -1,0 +1,69 @@
+# starship — Rose Pine, minimal two-line prompt
+# See: https://starship.rs/config/
+
+add_newline = true
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$rust\
+$golang\
+$java\
+$docker_context\
+$kubernetes\
+$cmd_duration\
+$line_break\
+$character"""
+
+[directory]
+style = "bold #9ccfd8"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "#c4a7e7"
+
+[git_status]
+style = "#eb6f92"
+
+[cmd_duration]
+min_time = 2000
+style = "#f6c177"
+format = "[ $duration]($style)"
+
+[character]
+success_symbol = "[❯](bold #ebbcba)"
+error_symbol = "[❯](bold #eb6f92)"
+
+[nodejs]
+style = "#31748f"
+symbol = " "
+
+[python]
+style = "#f6c177"
+symbol = " "
+
+[rust]
+style = "#eb6f92"
+symbol = " "
+
+[golang]
+style = "#9ccfd8"
+symbol = " "
+
+[java]
+style = "#ebbcba"
+symbol = " "
+
+[docker_context]
+style = "#9ccfd8"
+symbol = " "
+
+[kubernetes]
+style = "#c4a7e7"
+symbol = " "
+disabled = false

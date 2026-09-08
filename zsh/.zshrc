@@ -1,6 +1,7 @@
 ZSH="/usr/share/oh-my-zsh/"
 export ZSH="/usr/share/oh-my-zsh/"
-ZSH_THEME="keyitdev"
+# prompt: starship (falls back to a plain prompt if not installed)
+ZSH_THEME=""
 plugins=(git)
 
 ZSH_CACHE_DIR="$HOME/.cache/oh-my-zsh"
@@ -97,3 +98,10 @@ if [[ $- == *i* && -z "$TMUX" && $SHLVL -eq 1 ]] && command -v fastfetch &>/dev/
   fastfetch
 fi
 
+
+# starship prompt (https://starship.rs) — rose pine config in ~/.config/starship.toml
+if command -v starship &>/dev/null; then
+  eval "$(starship init zsh)"
+else
+  PROMPT='%F{magenta}%1~%f %# '
+fi

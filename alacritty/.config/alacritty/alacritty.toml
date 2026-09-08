@@ -1,35 +1,65 @@
-[colors.bright]
-black = "#727480"
-blue = "#6c90a8"
-cyan = "#528a9b"
-green = "#999f63"
-magenta = "#776690"
-red = "#cb5760"
-white = "#eeffff"
-yellow = "#d4a067"
+# Rose Pine Main — alacritty
+[colors.primary]
+background = "#191724"
+foreground = "#e0def4"
+
+[colors.cursor]
+text = "#e0def4"
+cursor = "#56526e"
+
+[colors.vi_mode_cursor]
+text = "#e0def4"
+cursor = "#c4a7e7"
+
+[colors.selection]
+text = "#e0def4"
+background = "#403d02"
+
+[colors.search.matches]
+foreground = "#e0def4"
+background = "#403d02"
+
+[colors.search.focused_match]
+foreground = "#191724"
+background = "#ebbcba"
+
+[colors.hints.start]
+foreground = "#908caa"
+background = "#1f1d2e"
+
+[colors.hints.end]
+foreground = "#e0def4"
+background = "#1f1d2e"
 
 [colors.normal]
-black = "#15121c"
-blue = "#6c90a8"
-cyan = "#528a9b"
-green = "#999f63"
-magenta = "#776690"
-red = "#cb5760"
-white = "#eeffff"
-yellow = "#d4a067"
+black = "#26233a"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
 
-[colors.primary]
-background = "#1b1b25"
-foreground = "#dedede"
+[colors.bright]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
 
 [font]
-size = 7.5
+size = 8.5
 
 [font.normal]
 family = "Roboto mono"
 
 [window]
-opacity = 0.9
+opacity = 0.92
+blur = true
 
 [window.padding]
 x = 8
