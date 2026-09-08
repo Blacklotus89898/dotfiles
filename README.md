@@ -27,7 +27,7 @@ fonts/                    OpenSans, RobotoMono, Iosevka, Feather -> /usr/share/f
 wallpapers/               referenced by i3 as ~/Pictures/wallpapers/background.png
 themes/                   GTK theme (RosePine-Main)
 packages/                 pacman-explicit.txt + aur.txt (curated)
-install.sh                one-shot reproduction script
+setup.sh                  master from-scratch installer
 ```
 
 ## Restore on a fresh machine
@@ -35,10 +35,11 @@ install.sh                one-shot reproduction script
 ```sh
 git clone git@github.com:Blacklotus89898/dotfiles.git
 cd dotfiles
-./install.sh              # everything: packages, fonts, scripts, theme, stow, services
+./setup.sh                # everything: prereqs, packages, fonts, scripts,
+                          # theme, wallpapers, stow, services, tweaks
 ```
 
-Steps can be run individually: `./install.sh packages configs`.
+Steps can be run individually: `./setup.sh packages stow`.
 
 Post-install (manual):
 ```sh
