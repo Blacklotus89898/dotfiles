@@ -166,6 +166,13 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# return to the workspace you came from when pressing the same key again
+workspace_auto_back_and_forth yes
+
+# app -> workspace assignments
+assign [class="Spotify"] $ws10
+for_window [class="Spotify"] border none
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2

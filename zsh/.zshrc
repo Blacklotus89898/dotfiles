@@ -91,3 +91,9 @@ alias zealapp="/usr/local/bin/zealapp &"
 alias c="xclip -selection clipboard"
 alias v="xclip -selection clipboard -o"
 
+# Terminal dashboard: fastfetch on fresh interactive terminals only
+# (not inside tmux panes, not nested shells)
+if [[ $- == *i* && -z "$TMUX" && $SHLVL -eq 1 ]] && command -v fastfetch &>/dev/null; then
+  fastfetch
+fi
+
